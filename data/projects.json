@@ -1,0 +1,254 @@
+[
+    {
+        "id": "shopebuy-01",
+        "slug": "shopebuy-ecommerce-platform",
+        "title": "ShopeBuy E-Commerce Platform",
+        "tagline": "A scalable and cost-efficient e-commerce platform built to help small businesses launch their online store.",
+        "description": "ShopeBuy is a modern e-commerce platform developed using Next.js and MongoDB that enables small businesses to manage products, process payments, and handle orders efficiently with a custom admin dashboard.",
+        "heroImage": "/projects/shopebuy-ecommerce-platform/shopebuy-home.png",
+        "links": {
+            "live": "https://shopebuy.live",
+            "repository": "",
+            "caseStudy": ""
+        },
+        "meta": {
+            "client": "Muhammed Shahil",
+            "role": "Full-Stack Developer",
+            "timeline": "3–4 Months",
+            "platform": "Web (Progressive Web App)",
+            "year": 2025,
+            "status": "production"
+        },
+        "overview": "ShopeBuy is a complete e-commerce platform developed for a client who wanted to start an online retail business with minimal upfront investment. The project involved designing and implementing a scalable web application that allows the client to manage products, orders, customer reviews, and promotional banners through a custom-built admin dashboard. The platform focuses on performance, search engine optimization, and efficient media handling while providing customers with a smooth shopping and checkout experience.",
+        "challenges": [
+            "The client had a limited budget, requiring the use of free-tier or trial versions of multiple services while still ensuring production-level reliability.",
+            "Designing a flexible product system supporting variants such as size and color along with bundle offers.",
+            "Handling image-heavy product catalogs while minimizing bandwidth usage and maintaining fast page loads.",
+            "Building a full e-commerce platform including payments, admin tools, notifications, and tracking as a solo developer.",
+            "Ensuring the system could scale in the future even though the business initially had a small customer base."
+        ],
+        "solutions": [
+            "Developed the application using Next.js with modern performance optimizations including server-side rendering and incremental caching.",
+            "Implemented MongoDB as the database with intelligent caching strategies to reduce unnecessary database queries.",
+            "Used Next.js image optimization and caching to reduce ImageKit bandwidth usage while maintaining high-quality media delivery.",
+            "Integrated Cashfree Payment Gateway to support secure and reliable online transactions.",
+            "Built a custom admin dashboard enabling the client to manage products, orders, banners, and reviews independently.",
+            "Implemented SEO enhancements including structured data such as Product Schema and Organization Schema.",
+            "Integrated analytics and marketing tools including Google Analytics, Google Tag Manager custom events, Meta Pixel, and Vercel Speed Insights to monitor performance and campaign effectiveness."
+        ],
+        "technologies": [
+            {
+                "name": "Next.js",
+                "type": "framework"
+            },
+            {
+                "name": "MongoDB",
+                "type": "database"
+            },
+            {
+                "name": "ImageKit",
+                "type": "media-storage"
+            },
+            {
+                "name": "Tailwind CSS",
+                "type": "ui-framework"
+            },
+            {
+                "name": "React Query",
+                "type": "data-fetching"
+            },
+            {
+                "name": "Framer Motion",
+                "type": "animation"
+            },
+            {
+                "name": "Auth.js",
+                "type": "authentication"
+            },
+            {
+                "name": "Cashfree Payment Gateway",
+                "type": "payment"
+            },
+            {
+                "name": "Nodemailer",
+                "type": "email-service"
+            },
+            {
+                "name": "Web Push API",
+                "type": "notifications"
+            },
+            {
+                "name": "Zod",
+                "type": "validation"
+            }
+        ],
+        "architecture": {
+            "frontend": "Next.js (React)",
+            "backend": "Next.js API Routes",
+            "database": "MongoDB",
+            "mediaStorage": "ImageKit",
+            "hosting": "Vercel",
+            "cdn": "Cloudflare"
+        },
+        "features": [
+            {
+                "title": "Custom Admin Dashboard",
+                "description": "A complete admin management system that allows the client to manage products, orders, banners, and customer reviews without technical assistance.",
+                "image": "/projects/shopebuy-ecommerce-platform/admin-dashboard.png"
+            },
+            {
+                "title": "Flexible Product Management",
+                "description": "Supports product variants including size and color, bundle pack offers, and embedded product videos to improve the shopping experience.",
+                "image": "/projects/shopebuy-ecommerce-platform/flexible-product-management.png"
+            },
+            {
+                "title": "Secure Payment Integration",
+                "description": "Integrated Cashfree Payment Gateway enabling secure and seamless online payment processing for customers.",
+                "image": "/projects/shopebuy-ecommerce-platform/secure-payment-integration.png"
+            },
+            {
+                "title": "Delivery Tracking",
+                "description": "Customers can track order delivery progress, improving transparency and reducing support queries.",
+                "image": "/projects/shopebuy-ecommerce-platform/delivery-tracking.png"
+            },
+            {
+                "title": "Marketing & Analytics Integration",
+                "description": "Implemented Google Analytics, custom Google Tag Manager events, Meta Pixel tracking, and Vercel Speed Insights for marketing analysis and performance monitoring.",
+                "image": "/projects/shopebuy-ecommerce-platform/marketing-analytics.png"
+            },
+            {
+                "title": "Progressive Web App (PWA)",
+                "description": "The platform supports PWA capabilities providing faster loading, improved performance, and a mobile-app-like experience.",
+                "image": "/projects/shopebuy-ecommerce-platform/progressive-web-app.png"
+            }
+        ],
+        "screenshots": [],
+        "metrics": [
+            {
+                "name": "Development Time",
+                "value": "3–4 Months"
+            },
+            {
+                "name": "Developer",
+                "value": "Solo Development"
+            },
+            {
+                "name": "Platform",
+                "value": "Progressive Web App"
+            }
+        ]
+    },
+    {
+        "id": "blood-bank-01",
+        "slug": "codingclub-blood-donor-platform",
+        "title": "Coding Club Blood Donor Platform",
+        "tagline": "A community-driven platform to help volunteers quickly find blood donors during emergencies.",
+        "description": "A blood donor management platform developed by the Coding Club to help volunteers and NSS members quickly find donors with matching blood groups and maintain donation records.",
+        "heroImage": "/projects/codingclub-blood-donor-platform/blood-bank-hero.png",
+        "links": {
+            "live": "https://blood.codingclubjdt.in/",
+            "repository": "",
+            "caseStudy": ""
+        },
+        "meta": {
+            "client": "Coding Club & NSS Team",
+            "role": "Full-Stack Developer",
+            "timeline": "2 Weeks",
+            "platform": "Web Application",
+            "year": 2025,
+            "status": "production"
+        },
+        "overview": "This project originated from an idea presented by a first-year student during a Coding Club program. Initially the concept did not receive much attention, but later we observed that several classmates, NSS members, and SIPC members struggled to find blood donors with matching blood groups during emergencies. To address this issue, we decided to build a centralized platform that allows volunteers to quickly search for donors. The NSS team collaborated with the Coding Club and requested a feature to log blood donations, including the donation date and quantity, so they could later recognize donors with appreciation tokens. Although development initially started as a team effort, progress slowed over time, and I eventually continued development independently to complete and deploy the platform.",
+        "challenges": [
+            "Ensuring sensitive donor information such as phone numbers is protected and accessible only to authorized volunteers.",
+            "Designing a role-based access system for admins and volunteers within a short development timeline.",
+            "Managing donor records and blood donation logs efficiently while keeping the interface simple for volunteers.",
+            "Completing a secure and functional full-stack platform within two weeks."
+        ],
+        "solutions": [
+            "Implemented role-based authentication with different permissions for admins and volunteers.",
+            "Restricted donor contact details so only authorized volunteers can view phone numbers, protecting donor privacy.",
+            "Created a blood donation logging system to record donation dates and quantities for recognition and record-keeping.",
+            "Separated frontend and backend deployments to make the system more scalable for future mobile apps or bots.",
+            "Applied backend security practices such as password hashing, rate limiting, and HTTP security headers."
+        ],
+        "technologies": [
+            {
+                "name": "React",
+                "type": "frontend-framework"
+            },
+            {
+                "name": "Express.js",
+                "type": "backend-framework"
+            },
+            {
+                "name": "MongoDB",
+                "type": "database"
+            },
+            {
+                "name": "React Query",
+                "type": "data-fetching"
+            },
+            {
+                "name": "bcryptjs",
+                "type": "authentication-security"
+            },
+            {
+                "name": "express-rate-limit",
+                "type": "security"
+            },
+            {
+                "name": "helmet",
+                "type": "security"
+            }
+        ],
+        "architecture": {
+            "frontend": "React",
+            "backend": "Express.js API",
+            "database": "MongoDB",
+            "hosting": "Separate frontend and backend deployments"
+        },
+        "features": [
+            {
+                "title": "Role-Based Authentication",
+                "description": "Admins and volunteers have different system permissions to manage donor information and operational tasks securely.",
+                "image": "/features/authentication.png"
+            },
+            {
+                "title": "Donor Management System",
+                "description": "Volunteers can add new donors, manage donor records, and quickly search donors by blood group during emergencies.",
+                "image": "/features/donor-management.png"
+            },
+            {
+                "title": "Blood Donation Logs",
+                "description": "Tracks blood donation details including donation date and quantity so organizations can maintain proper records and appreciate donors.",
+                "image": "/features/blood-donation-logs.png"
+            },
+            {
+                "title": "Volunteer Management",
+                "description": "Admins can add or remove volunteers who are authorized to access donor contact information and manage records.",
+                "image": "/features/volunteer-management.png"
+            },
+            {
+                "title": "Secure Backend",
+                "description": "Implemented backend protections including password hashing, rate limiting, and security headers to protect the platform from common web attacks.",
+                "image": "/features/secure-backend.png"
+            }
+        ],
+        "screenshots": [],
+        "metrics": [
+            {
+                "name": "Development Time",
+                "value": "2 Weeks"
+            },
+            {
+                "name": "Architecture",
+                "value": "Separate Frontend & Backend"
+            },
+            {
+                "name": "Purpose",
+                "value": "Community Blood Donation Support"
+            }
+        ]
+    }
+]
