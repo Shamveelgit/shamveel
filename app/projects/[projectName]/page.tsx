@@ -473,7 +473,7 @@ async function ProjectDetailPage({ params }: Props) {
 
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <Link
-              href="mailto:shamveelmdr@gmail.com"
+              href="mailto:contact@shamveel.dev"
               className="relative px-10 py-5 rounded-full bg-title text-secondary font-bold hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:-translate-y-1 transition-all duration-300 overflow-hidden group inline-flex items-center justify-center gap-3"
             >
               <span className="absolute inset-0 bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out" />

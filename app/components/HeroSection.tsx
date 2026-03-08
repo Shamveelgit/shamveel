@@ -27,7 +27,7 @@ function HeroSection() {
               Hello there, Nice to meet you ❤️, I AM
             </h6>
             <h3 className="hero-text font-abhaya-libre text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl text-title font-bold leading-tight name">
-              shamveel
+              muhammed shamveel
             </h3>
             <p className="hero-text bio font-poppins text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed max-w-md">
               passionate web designer dedicated to creating visually stunning
@@ -35,7 +35,7 @@ function HeroSection() {
               online experiences that captivate users and drive engagement.
             </p>
             <Link
-              href="mailto:shamveelmdr@gmail.com"
+              href="mailto:contact@shamveel.dev"
               className="max-md:inline-block"
             >
               <button className="hero-text relative overflow-hidden group px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-2xl font-poppins font-medium text-sm sm:text-base md:text-lg text-white backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/25 transition-all duration-500 hover:scale-105 hover:bg-white/20 hover:border-white/30 active:scale-95 active:bg-white/30 active:shadow-white/40 active:duration-150 before:absolute before:inset-0 before:bg-gradient-to-r before:from-white/0 before:via-white/20 before:to-white/0 before:translate-x-[-100%] before:transition-transform before:duration-700 hover:before:translate-x-[100%] after:absolute after:inset-0 after:bg-gradient-to-br after:from-white/30 after:to-transparent after:opacity-0 after:transition-opacity after:duration-150 active:after:opacity-100 mt-4">

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         'hire full-stack developer Kerala',
         'web development inquiry Kerala',
         'software developer internship contact',
-        'shamveelmdr@gmail.com',
+        'contact@shamveel.dev',
         'Muhammed Shamveel email',
         'Kozhikode web developer contact',
         'freelance web dev project India',
@@ -56,7 +56,7 @@ const contactPageSchema = {
     mainEntity: {
         '@type': 'Person',
         name: 'Muhammed Shamveel',
-        email: 'shamveelmdr@gmail.com',
+        email: 'contact@shamveel.dev',
         url: BASE_URL,
         jobTitle: 'Full-Stack Web Developer',
         address: {
@@ -117,7 +117,7 @@ export default function ContactPage() {
                         {/* Contact Info Cards */}
                         <div className="flex flex-col gap-6">
                             {/* Email */}
-                            <Link href="mailto:shamveelmdr@gmail.com" className="group p-8 rounded-3xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-title/30 transition-all duration-500 backdrop-blur-sm relative overflow-hidden">
+                            <Link href="mailto:contact@shamveel.dev" className="group p-8 rounded-3xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-title/30 transition-all duration-500 backdrop-blur-sm relative overflow-hidden">
                                 <div className="absolute inset-0 bg-title/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]" />
                                 <div className="w-14 h-14 rounded-2xl bg-title/10 flex items-center justify-center border border-title/20 mb-6 group-hover:scale-110 transition-transform duration-500 relative z-10">
                                     <svg className="w-7 h-7 text-title" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -125,7 +125,7 @@ export default function ContactPage() {
                                     </svg>
                                 </div>
                                 <h3 className="font-abhaya-libre text-3xl font-bold text-white mb-2 relative z-10">Email Me</h3>
-                                <p className="text-lg font-poppins text-white/80 relative z-10">shamveelmdr@gmail.com</p>
+                                <p className="text-lg font-poppins text-white/80 relative z-10">contact@shamveel.dev</p>
                                 <p className="text-sm text-white/40 font-poppins mt-2 font-light relative z-10">I usually respond within 24 hours.</p>
                             </Link>
 
@@ -166,7 +166,7 @@ export default function ContactPage() {
 
                             <h3 className="font-abhaya-libre text-4xl text-white font-bold mb-8 relative z-10">Send a Message</h3>
 
-                            <form className="space-y-6 relative z-10" action="mailto:shamveelmdr@gmail.com" method="post" encType="text/plain">
+                            <form className="space-y-6 relative z-10" action="mailto:contact@shamveel.dev" method="post" encType="text/plain">
                                 <div className="grid sm:grid-cols-2 gap-6">
                                     <div className="space-y-2">
                                         <label htmlFor="name" className="text-xs font-poppins font-semibold text-white/60 uppercase tracking-[0.15em] pl-1">Name</label>
