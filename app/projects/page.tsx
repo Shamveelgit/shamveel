@@ -7,7 +7,7 @@ import FilterableProjects from './components/FilterableProjects'
 import ProjectsCTA from './components/ProjectsCTA'
 import ProjectsGsapWrapper from './components/ProjectsGsapWrapper'
 
-const BASE_URL = 'https://shamveel.dev'
+const BASE_URL = 'https://www.shamveel.dev'
 
 export const metadata: Metadata = {
     title: 'Projects by Muhammed Shamveel — Full-Stack Web Development Portfolio',

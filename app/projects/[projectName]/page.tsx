@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 import type { ProjectCollection } from '@/types/ProjectCollections'
 import projectsData from '@/data/projects.json'
 
-const BASE_URL = 'https://shamveel.dev'
+const BASE_URL = 'https://www.shamveel.dev'
 
 type Props = {
   params: Promise<{ projectName: string }>

@@ -4,7 +4,7 @@ import React from 'react'
 import Header from '@/app/components/Header'
 import Link from 'next/link'
 
-const BASE_URL = 'https://shamveel.dev'
+const BASE_URL = 'https://www.shamveel.dev'
 
 export const metadata: Metadata = {
     title: 'Contact Muhammed Shamveel — Hire a Freelance Web Developer in Kerala',

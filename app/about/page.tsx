@@ -5,7 +5,7 @@ import Footer from '@/app/components/Footer'
 import Image from 'next/image'
 import Script from 'next/script'
 
-const BASE_URL = 'https://shamveel.dev'
+const BASE_URL = 'https://www.shamveel.dev'
 
 // ─── Page-level SEO metadata ───────────────────────────────────────────────
 export const metadata: Metadata = {

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/api/'],
             },
         ],
-        sitemap: 'https://shamveel.dev/sitemap.xml',
+        sitemap: 'https://www.shamveel.dev/sitemap.xml',
     }
 }

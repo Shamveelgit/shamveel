@@ -68,7 +68,7 @@ export const stickNoBills = Stick_No_Bills({
   style: ["normal"],
 });
 
-const BASE_URL = 'https://shamveel.dev'
+const BASE_URL = 'https://www.shamveel.dev'
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -130,7 +130,7 @@ export const metadata: Metadata = {
       'Passionate full-stack web developer from Kozhikode, Kerala. Building modern web experiences with Next.js, React, and Node.js.',
     images: [
       {
-        url: '/og-image.png',
+        url: '/OFFICAL1.png',
         width: 1200,
         height: 630,
         alt: 'Muhammed Shamveel — Full-Stack Developer',
@@ -142,14 +142,19 @@ export const metadata: Metadata = {
     title: 'Muhammed Shamveel — Full-Stack Developer & Freelancer',
     description:
       'Passionate full-stack developer from Kerala. Building with Next.js, React, TypeScript & Node.js.',
-    images: ['/og-image.png'],
+    images: ['/OFFICAL1.png'],
     creator: '@shamveel',
+  },
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
   alternates: {
     canonical: BASE_URL,
   },
   verification: {
-    google:  'CAH5i-a6CXYtbgEdEoJNMBFTOoo9IRVAcUPluHzthjQ',
+    google: 'CAH5i-a6CXYtbgEdEoJNMBFTOoo9IRVAcUPluHzthjQ',
   },
 };
 

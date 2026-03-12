@@ -5,7 +5,7 @@ import HeroSection from "./components/HeroSection";
 import ParallaxSecion from "./components/ParallaxSecion";
 import WorksSection from "./components/WorksSection";
 
-const BASE_URL = 'https://shamveel.dev'
+const BASE_URL = 'https://www.shamveel.dev'
 
 export const metadata: Metadata = {
   title: 'Muhammed Shamveel — Full-Stack Developer & Freelancer | Kozhikode, Kerala',

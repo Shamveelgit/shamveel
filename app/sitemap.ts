@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import projectsData from '@/data/projects.json'
 
-const BASE_URL = 'https://shamveel.dev'
+const BASE_URL = 'https://www.shamveel.dev'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const staticRoutes: MetadataRoute.Sitemap = [
