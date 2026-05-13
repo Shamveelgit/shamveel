@@ -158,6 +158,68 @@ export const metadata: Metadata = {
   },
 };
 
+// Organization schema for local SEO and contact information
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Muhammed Shamveel — Full-Stack Developer',
+  description: 'Full-stack web developer specializing in MERN stack and Next.js development based in Kozhikode, Kerala.',
+  url: BASE_URL,
+  email: 'contact@shamveel.dev',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Kozhikode',
+    addressRegion: 'Kerala',
+    postalCode: '673585',
+    addressCountry: 'IN',
+  },
+  areaServed: [
+    {
+      "@type": "City",
+      "name": "Dubai",
+      "sameAs": "wikipedia.org"
+    },
+    {
+      "@type": "Country",
+      "name": "United Arab Emirates",
+      "sameAs": "wikipedia.org"
+    },
+    {
+      "@type": "Country",
+      "name": "Qatar",
+      "sameAs": "wikipedia.org"
+    },
+    {
+      "@type": "Country",
+      "name": "India",
+      "sameAs": "wikipedia.org"
+    },
+    {
+      '@type': 'City',
+      name: 'Kozhikode',
+    },
+    {
+      '@type': 'State',
+      name: 'Kerala',
+    },
+  ],
+  image: `${BASE_URL}/OFFICAL1.png`,
+  priceRange: '$$',
+  serviceType: ['Web Development', 'Full-Stack Development', 'Freelance Web Developer', 'React Developer', 'Next.js Developer'],
+  sameAs: [
+    'https://github.com/shamveelgit',
+    'https://www.linkedin.com/in/dev-shamveel',
+    'https://x.com/MuhammedSh77205',
+    'https://www.facebook.com/muhammed.shamveel.77'
+  ],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'Business Development',
+    email: 'contact@shamveel.dev',
+    availableLanguage: ['en'],
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -165,6 +227,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script
+        id="schema-organization"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        strategy="beforeInteractive"
+      />
       <Script
         id="gtm-script"
         strategy="beforeInteractive"

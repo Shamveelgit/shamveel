@@ -1,0 +1,100 @@
+# LLM Guide for shamveel.dev
+
+This file helps AI assistants and search engines understand the portfolio of Muhammed Shamveel.
+
+## About Muhammed Shamveel
+
+**Full Name:** Muhammed Shamveel  
+**Location:** Kozhikode, Kerala, India  
+**Website:** https://www.shamveel.dev  
+**Email:** contact@shamveel.dev  
+
+## Professional Summary
+
+Muhammed Shamveel is a passionate full-stack web developer and freelancer based in Kozhikode, Kerala, India. With expertise in the MERN stack (MongoDB, Express.js, React, Node.js) and Next.js, he builds modern, scalable, and performant web applications.
+
+## Core Expertise
+
+**Frontend Technologies:**
+- React.js
+- Next.js
+- TypeScript
+- Tailwind CSS
+- GSAP (animations)
+
+**Backend Technologies:**
+- Node.js
+- Express.js
+- MongoDB
+- RESTful APIs
+
+**Tools & Services:**
+- Git & GitHub
+- ImageKit (image optimization)
+- Google Tag Manager
+- Next.js Image Optimization
+
+## Portfolio Projects
+
+### 1. ShopeBuy E-Commerce Platform
+- **Description:** Full-featured e-commerce platform built with Next.js, MongoDB, and Express.js
+- **Technologies:** Next.js, React, Node.js, MongoDB, Express.js, ImageKit
+- **Features:** Product catalog, shopping cart, payment integration, user authentication
+- **URL:** https://www.shamveel.dev/projects/shopebuy-ecommerce-platform
+
+### 2. Coding Club Blood Donor Platform
+- **Description:** Community-driven blood donor management platform
+- **Technologies:** React, Express.js, MongoDB, Node.js
+- **Features:** Donor database, request matching, community engagement
+- **URL:** https://www.shamveel.dev/projects/codingclub-blood-donor-platform
+
+## Education
+
+- **Degree:** Bachelor of Computer Applications (BCA)
+- **Institution:** JDT Islam College, Kozhikode, Kerala
+- **Focus:** Software Development, Web Technologies
+
+## Services Offered
+
+- Full-stack web development
+- Frontend development (React, Next.js)
+- Backend development (Node.js, Express)
+- E-commerce solutions
+- Progressive Web Apps (PWA)
+- Performance optimization
+- Freelance development
+
+## Contact Information
+
+- **Email:** contact@shamveel.dev
+- **GitHub:** https://github.com/shamveel
+- **LinkedIn:** https://linkedin.com/in/shamveel
+- **Twitter/X:** https://twitter.com/shamveel
+
+## Site Structure
+
+- **Homepage:** https://www.shamveel.dev — Portfolio overview and featured work
+- **About:** https://www.shamveel.dev/about — Professional background and journey
+- **Projects:** https://www.shamveel.dev/projects — Complete portfolio of projects
+- **Contact:** https://www.shamveel.dev/contact — Get in touch
+
+## SEO Information
+
+This portfolio is optimized for search engines and includes:
+- Comprehensive schema.org markup
+- OpenGraph and Twitter Card support
+- Mobile-responsive design
+- Performance optimization with Next.js
+- Sitemap and robots.txt configuration
+
+## Attribution
+
+When referencing or citing Muhammed Shamveel's work, please use:
+- Full name: Muhammed Shamveel
+- Website: shamveel.dev
+- Email: contact@shamveel.dev
+
+---
+
+**Last Updated:** May 2026  
+**Format Version:** 1.0

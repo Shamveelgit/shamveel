@@ -86,8 +86,66 @@ async function ProjectDetailPage({ params }: Props) {
   const currentIndex = projects.findIndex((p) => p.id === projectName)
   const nextProject = projects[(currentIndex + 1) % projects.length]
 
+  // Generate project schema markup
+  const projectSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: project.title,
+    description: project.description || project.tagline,
+    url: `${BASE_URL}/projects/${project.slug}`,
+    applicationCategory: 'WebApplication',
+    image: project.heroImage || '/og-image.png',
+    creator: {
+      '@type': 'Person',
+      name: 'Muhammed Shamveel',
+      url: BASE_URL,
+    },
+    featureList: project.features?.map((feature: any) => ({
+      '@type': 'Thing',
+      name: feature.title || feature,
+    })) || [],
+    keywords: project.technologies.map((t: any) => t.name).join(', '),
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: BASE_URL,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Projects',
+        item: `${BASE_URL}/projects`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: project.title,
+        item: `${BASE_URL}/projects/${project.slug}`,
+      },
+    ],
+  }
+
   return (
     <>
+      <Script
+        id="schema-project"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }}
+        strategy="beforeInteractive"
+      />
+      <Script
+        id="schema-breadcrumb-project"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        strategy="beforeInteractive"
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-linear-to-b from-secondary via-background-100 to-background overflow-hidden">
         {/* Abstract Background */}

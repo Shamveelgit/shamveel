@@ -46,17 +46,68 @@ export const metadata: Metadata = {
   },
 }
 
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Muhammed Shamveel',
+  url: BASE_URL,
+  image: `${BASE_URL}/OFFICAL1.png`,
+  jobTitle: 'Full-Stack Web Developer & Freelancer',
+  description: 'Passionate full-stack web developer from Kozhikode, Kerala. Specializing in MERN stack and Next.js development.',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Kozhikode',
+    addressRegion: 'Kerala',
+    addressCountry: 'IN',
+  },
+  email: 'contact@shamveel.dev',
+  sameAs: [
+    'https://github.com/shamveelgit',
+    'https://www.linkedin.com/in/dev-shamveel',
+    'https://x.com/MuhammedSh77205',
+  ],
+  knowsAbout: [
+    'React.js',
+    'Next.js',
+    'Node.js',
+    'MongoDB',
+    'Express.js',
+    'JavaScript',
+    'TypeScript',
+    'MERN Stack',
+    'Web Development',
+    'Full-Stack Development',
+  ],
+  hasCredential: [
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'degree',
+      name: 'Bachelor of Computer Applications (BCA)',
+      issuedBy: {
+        '@type': 'EducationalOrganization',
+        name: 'JDT Islam College',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Kozhikode',
+          addressRegion: 'Kerala',
+          addressCountry: 'IN',
+        },
+      },
+    },
+  ],
+  workLocation: {
+    '@type': 'Place',
+    name: 'Kozhikode, Kerala, India',
+  },
+}
+
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Muhammed Shamveel — Portfolio',
   url: BASE_URL,
   description: 'Portfolio of Muhammed Shamveel, full-stack web developer from Kozhikode, Kerala.',
-  author: {
-    '@type': 'Person',
-    name: 'Muhammed Shamveel',
-    url: BASE_URL,
-  },
+  author: personSchema,
   potentialAction: {
     '@type': 'SearchAction',
     target: `${BASE_URL}/projects?q={search_term_string}`,
@@ -64,14 +115,100 @@ const websiteSchema = {
   },
 }
 
+const homepageBreadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: BASE_URL,
+    },
+  ],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What technologies do you specialize in?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and Next.js. I also work with TypeScript, Tailwind CSS, and modern web development tools and frameworks.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What services do you offer?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'I offer full-stack web development, frontend development, backend development, e-commerce solutions, performance optimization, and custom web applications. I work with startups, small businesses, and individual clients.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are you available for freelance projects?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, I am actively available for freelance web development projects. I also welcome full-time positions and internship opportunities. Contact me at contact@shamveel.dev to discuss your project.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does a typical project take?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Project timelines vary based on complexity and scope. Small websites typically take 2-4 weeks, while larger applications might take 2-4 months or more. I always provide a detailed timeline estimate before starting.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you build responsive websites?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Absolutely! All my projects are built with a mobile-first approach using responsive design principles. This ensures your website looks and works great on all devices — desktop, tablet, and mobile.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you help with website performance optimization?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, I specialize in web performance optimization including code splitting, image optimization, caching strategies, and Core Web Vitals improvements. A fast website improves user experience and SEO rankings.',
+      },
+    },
+  ],
+}
+
 
 export default function Home() {
   return (
     <Wrapper>
       <Script
+        id="schema-person"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        strategy="beforeInteractive"
+      />
+      <Script
         id="schema-website"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        strategy="beforeInteractive"
+      />
+      <Script
+        id="schema-breadcrumb-home"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageBreadcrumbSchema) }}
+        strategy="beforeInteractive"
+      />
+      <Script
+        id="schema-faq-home"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         strategy="beforeInteractive"
       />
       {/* ===== SPLASH SCREEN ===== */}

@@ -1,5 +1,6 @@
 import React from 'react'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Header from '@/app/components/Header'
 import Footer from '@/app/components/Footer'
 import Image from 'next/image'
@@ -282,8 +283,8 @@ export default function AboutPage() {
                 itemType="https://schema.org/AboutPage"
             >
                 {/* Background glow effects */}
-                <div aria-hidden="true" className="absolute top-0 right-0 w-[500px] h-[500px] bg-title/5 rounded-full blur-[150px] pointer-events-none" />
-                <div aria-hidden="true" className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-500/5 rounded-full blur-[120px] pointer-events-none" />
+                <div aria-hidden="true" className="absolute top-0 right-0 w-125 h-125 bg-title/5 rounded-full blur-[150px] pointer-events-none" />
+                <div aria-hidden="true" className="absolute bottom-0 left-0 w-100 h-100 bg-indigo-500/5 rounded-full blur-[120px] pointer-events-none" />
                 <div aria-hidden="true" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-title/3 rounded-full blur-[180px] pointer-events-none" />
 
                 <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 space-y-24">
@@ -370,7 +371,13 @@ export default function AboutPage() {
                                     </div>
                                 </div>
                             </div>
-
+                            {/* Development Philosophy Box */}
+                            <div className="p-6 rounded-2xl bg-title/5 border border-title/20 mt-6">
+                                <h3 className="font-abhaya-libre text-xl text-title font-bold mb-3">Development Philosophy</h3>
+                                <p className="font-poppins text-sm text-white/70 leading-relaxed">
+                                    I'm passionate about writing clean, maintainable code and creating user-centered digital experiences. Every project is an opportunity to solve real-world problems through innovative web solutions. I focus on performance optimization, responsive design, and delivering products that users genuinely love. <Link href="/projects" className="text-title hover:text-title/80 transition-colors font-semibold">Explore my work</Link> to see these principles in action.
+                                </p>
+                            </div>
                             {/* Info Grid */}
                             <div className="grid sm:grid-cols-2 gap-6 pt-8 border-t border-white/10">
                                 <div className="p-6 rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors duration-300">
@@ -494,6 +501,20 @@ export default function AboutPage() {
                                 </p>
                             </div>
                         </div>
+                    </section>
+
+                    {/* ── Call to Action ── */}
+                    <section className="py-16 px-8 rounded-3xl bg-gradient-to-r from-title/10 to-indigo-500/10 border border-title/20 text-center">
+                        <h2 className="font-abhaya-libre text-4xl sm:text-5xl text-white font-bold mb-4">Ready to work together?</h2>
+                        <p className="font-poppins text-lg text-white/70 mb-8 max-w-2xl mx-auto">
+                            Whether you have a project in mind or just want to chat about ideas, I'd love to connect with you. Let's build something amazing.
+                        </p>
+                        <Link
+                            href="/contact"
+                            className="inline-block px-8 py-3 sm:px-10 sm:py-4 bg-title text-secondary font-semibold rounded-full hover:shadow-[0_0_30px_rgba(255,255,202,0.4)] hover:-translate-y-1 transition-all duration-300"
+                        >
+                            Get in Touch
+                        </Link>
                     </section>
 
                 </div>
